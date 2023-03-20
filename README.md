@@ -1,1 +1,0 @@
-# SkillsUSA_Practice
