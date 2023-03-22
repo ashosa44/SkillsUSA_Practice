@@ -188,3 +188,8 @@ h1, p {
     filter: grayscale(50%);
     position: relative;
 }
+
+.largeheadtext {
+    padding: 24px 48px;
+    color: #fff
+}
