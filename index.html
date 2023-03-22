@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/template.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Sample Website</h1>
+            <p>This is a practice website.</p>
+        </div>
+
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Music
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="header">
+                        <h2 style="align-items: center;">Discography</h2>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h3>Artist 1</h3>
+                            <a href="#">Album 1</a>
+                            <a href="#">Album 2</a>
+                            <a href="#">Album 3</a>
+                        </div>
+                        <div class="column">
+                            <h3>Artist 2</h3>
+                            <a href="#">Album 1</a>
+                            <a href="#">Album 2</a>
+                            <a href="#">Album 3</a>
+                        </div>
+                        <div class="column">
+                            <h3>Artist 3</h3>
+                            <a href="#">Album 1</a>
+                            <a href="#">Album 2</a>
+                            <a href="#">Album 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <h2>Our Artists</h2>
+                <div class="slideshow-container">
+                    <div class="slidesfade">
+                        <img src="\\715server\Student Data\OSAZUASH002\GitHub\SkillsUSA_Practice\media\competition.png" alt="" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="slidesfade">
+                        <img src="\\715server\Student Data\OSAZUASH002\GitHub\SkillsUSA_Practice\media\competition.png" alt="" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="slidesfade">
+                        <img src="\\715server\Student Data\OSAZUASH002\GitHub\SkillsUSA_Practice\media\competition.png" alt="" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides () {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].className = dots[i].style.display = "none";
+                    }
+                    
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000);
+            }
+            </script>
+
+            <p>Here is some text about the artists</p>
+        </div>
+        <div class="1main">
+            <h2>Heading</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident eum ea animi accusamus! Quo aliquid quam deleniti accusamus nobis, delectus expedita quas dicta debitis dolorem amet quos nulla atque.</p>
+        </div>
+
+            <div class="container">
+                <img class="background" src="\\715server\Student Data\OSAZUASH002\GitHub\SkillsUSA_Practice\media\pier68-boats.jpg" alt="Boats">
+                <div class="main">
+                    <h1>SkillsUSA Music</h1>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+
+
+
+
+
+            <h1.45>Attempt #2</h1.45>
+            <div class="top-section">
+                <div class="navigation" id="myNavbar">
+                    <a href="#home" class="nav-logo">Our Logo</a>
+                    <!-- Right Side Links -->
+                    <div class="navbar">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Music
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="header">
+                                    <h2 style="align-items: center;">Discography</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <h3>Artist 1</h3>
+                                        <a href="#">Album 1</a>
+                                        <a href="#">Album 2</a>
+                                        <a href="#">Album 3</a>
+                                    </div>
+                                    <div class="column">
+                                        <h3>Artist 2</h3>
+                                        <a href="#">Album 1</a>
+                                        <a href="#">Album 2</a>
+                                        <a href="#">Album 3</a>
+                                    </div>
+                                    <div class="column">
+                                        <h3>Artist 3</h3>
+                                        <a href="#">Album 1</a>
+                                        <a href="#">Album 2</a>
+                                        <a href="#">Album 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header class="main-head" id="home">
+                <div clas="display" style="padding:48px;">
+                    <span class="largeheadtext">SkillsUSA Records</span>
+                    <span class="mediumtext">An independent record company.</span>
+                    <p><a href="#about" class="head-button">Shop now</a></p>
+                </div>
+            </header>
+
+            <div class="about-container" id="about">
+                <h3 class="centered-about">About Us</h3>
+                <div class="centered-about" style="margin-top: 64px;">
+                    <div class="quarters">
+                        <img src="fakeimage" alt="">
+                        <p class="about-large">Independent</p>
+                        <P>We take pride in being an independent record comapny.</P>
+                    </div>
+                    <div class="quarters">
+                        <img src="fakeimage" alt="">
+                        <p class="about-large">Independent</p>
+                        <P>We take pride in being an independent record comapny.</P>
+                    </div>
+                    <div class="quarters">
+                        <img src="fakeimage" alt="">
+                        <p class="about-large">Independent</p>
+                        <P>We take pride in being an independent record comapny.</P>
+                    </div>
+                    <div class="quarters">
+                        <img src="fakeimage" alt="">
+                        <p class="about-large">Independent</p>
+                        <P>We take pride in being an independent record comapny.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-section" style="padding: 128px 16px">
+                <div class="row-padding">
+                    <div class="promo-columns">
+                        <h3>We know music.</h3>
+                        <p> blaljalkjdlkfjlkjflkdfjkljf dfkljf klaj fklaj fal kfja kf</p>
+                        <p><a href="#music" class="promo-button">Take a listen</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-centered">
+                <a href="#home" class="footer-button">Back to Home</a>
+                <p>Copyright 2023, SkillsUSA Music</p>
+            </footer>
+    </body>
+</html>

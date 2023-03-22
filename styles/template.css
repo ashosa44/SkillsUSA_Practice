@@ -1,15 +1,38 @@
-/*Main CSS*/
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
 
-/*Navbar*/
-*{
-    box-sizing: border-box;
+body, h1, h2, h3, h4, h5, h6 {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 body {
     margin: 0;
+    display: block;
 }
 
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+ div {
+    display: block;
+}
+
+/*top-section*/
+
+ .top-section {
+    top: 0;
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+
+/*Navbar*/
 .navbar {
+    box-sizing: inherit;
+    display: block;
     overflow: hidden;
     background-color: #333;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -156,3 +179,17 @@ h1, p {
     to {opacity: 1}
 }
 
+/*Image Header */
+.main-head {
+    background-position: center;
+    background-size: cover;
+    background-image: url(/media/pier68-boats.jpg);
+    min-height: 100%;
+    filter: grayscale(50%);
+    position: relative;
+}
+
+.largeheadtext {
+    padding: 24px 48px;
+    color: #fff
+}
