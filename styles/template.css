@@ -31,7 +31,6 @@ body {
 
 /*Navbar*/
 .navbar {
-    float: right;
     box-sizing: inherit;
     display: block;
     overflow: hidden;
