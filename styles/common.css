@@ -114,3 +114,45 @@ h1, p {
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*Slideshow*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width:100%;
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active {
+    background-color: red;
+}
+
+.fade {
+   animation-name: initial;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade { 
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
